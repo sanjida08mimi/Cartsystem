@@ -1,0 +1,31 @@
+﻿@model CartSystem.Models.ViewModel.AddToCartRequest
+@{
+}
+<div class="container">
+    <div class="row d-flex flex-column">
+        <div class="col-4 shadow p-3 mb-5 bg-body-tertiary rounded">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="">Colour</label>
+                    <select class="form-select" aria-label="Default select example" asp-for="Colour">
+                        <option selected disabled>Choose Colour</option>
+                        <option value="1">Black</option>
+                        <option value="2">White</option>
+                        <option value="3">Green</option>
+                    </select>
+                </div>
+                <div class="mb-3" >
+                    <label class="">Quantity</label>
+
+                    <input type="number" class="form-control" value="1" min="1" asp-for="Quantity" />
+                </div>
+                <button type="submit" class="btn btn-primary">Add To Cart</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
